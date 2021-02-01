@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bulb</title>
+    <link rel="stylesheet" href="bulb_style.css">
+    <script>
+        function func() {
+            var bulb = document.getElementById("bulb");
+            var button = document.getElementById("button");
+            if (bulb.className == "off") {
+                bulb.src = "https://cdn.pixabay.com/photo/2019/09/29/22/06/light-bulb-4514505_960_720.jpg";
+                button.innerHTML = "off";
+                bulb.className = "on";
+            }
+            else {
+                bulb.src = "https://base.imgix.net/files/base/ebm/tdworld/image/2019/11/tdworld_20573_lightbulb_getty.png?auto=format&fit=crop&h=432&w=768";
+                button.innerHTML = "on";
+                bulb.className = "off";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Bulb Experiment</h1>
+    <button id="button" onclick="func()">on</button>
+    <button id="button" onclick="func()">on</button>
+    <img id ="bulb" class="off" src="https://base.imgix.net/files/base/ebm/tdworld/image/2019/11/tdworld_20573_lightbulb_getty.png?auto=format&fit=crop&h=432&w=768" alt="">
+</body>
+</html>
