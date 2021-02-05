@@ -1,0 +1,22 @@
+.container{
+    background-color: aqua;
+    height: auto;
+    width: 500px;
+    margin: auto;
+    
+}
+thead{
+    display: table-caption;
+    text-align: center;
+    background-color: blueviolet;
+}
+table, td,thead{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+ button{
+     margin-left:47%;
+ }
+ .input{
+     margin-left: 40%;
+ }
